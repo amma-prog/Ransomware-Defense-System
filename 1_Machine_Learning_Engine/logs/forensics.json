@@ -1,0 +1,268 @@
+[
+  {
+    "timestamp": "2026-04-21T08:55:57.223626",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 0,
+    "processes_killed": 0,
+    "actions": [
+      "NO_PROCESS_FOUND"
+    ],
+    "snapshots": [],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.3005,
+      "threat_level": 2,
+      "rf_proba": 0.47,
+      "if_score": -0.601,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=47%)",
+      "triggered_by": [
+        "IF_score=-0.60<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.0167,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 8.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:20:23.103419",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 1,
+    "processes_killed": 1,
+    "actions": [
+      "QUARANTINED:15648",
+      "KILLED:15648:dead"
+    ],
+    "snapshots": [
+      {
+        "timestamp": "2026-04-21T10:21:29.764269",
+        "pid": 15648,
+        "name": "python.exe",
+        "exe": "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "cmdline": [
+          "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "test_attaque.py"
+        ],
+        "ppid": 22032,
+        "parent_name": "powershell.exe",
+        "username": "DESKTOP-9VU4QNA\\Nouar",
+        "create_time": "2026-04-21T10:20:22.268681",
+        "open_files": [
+          "C:\\Windows\\System32\\fr-FR\\kernel32.dll.mui",
+          "C:\\Windows\\System32\\fr-FR\\KernelBase.dll.mui",
+          "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt"
+        ],
+        "connections": [],
+        "children": []
+      }
+    ],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.2709,
+      "threat_level": 3,
+      "rf_proba": 0.7589,
+      "if_score": -0.5418,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=76%)",
+      "triggered_by": [
+        "RF_proba=0.76>0.7",
+        "IF_score=-0.54<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.05,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 10.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:20:23.103419",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 1,
+    "processes_killed": 1,
+    "actions": [
+      "QUARANTINED:15648",
+      "KILLED:15648:dead"
+    ],
+    "snapshots": [
+      {
+        "timestamp": "2026-04-21T10:21:29.664586",
+        "pid": 15648,
+        "name": "python.exe",
+        "exe": "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "cmdline": [
+          "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "test_attaque.py"
+        ],
+        "ppid": 22032,
+        "parent_name": "powershell.exe",
+        "username": "DESKTOP-9VU4QNA\\Nouar",
+        "create_time": "2026-04-21T10:20:22.268681",
+        "open_files": [
+          "C:\\Windows\\System32\\fr-FR\\kernel32.dll.mui",
+          "C:\\Windows\\System32\\fr-FR\\KernelBase.dll.mui",
+          "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt"
+        ],
+        "connections": [],
+        "children": []
+      }
+    ],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.2701,
+      "threat_level": 3,
+      "rf_proba": 0.7587,
+      "if_score": -0.5403,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=76%)",
+      "triggered_by": [
+        "RF_proba=0.76>0.7",
+        "IF_score=-0.54<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.0333,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 10.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-21T10:21:30.522835",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 0,
+    "processes_killed": 0,
+    "actions": [
+      "NO_PROCESS_FOUND"
+    ],
+    "snapshots": [],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.2709,
+      "threat_level": 3,
+      "rf_proba": 0.7537,
+      "if_score": -0.5419,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=75%)",
+      "triggered_by": [
+        "RF_proba=0.75>0.7",
+        "IF_score=-0.54<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.0167,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 10.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-29T14:13:13.469343",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 1,
+    "processes_killed": 1,
+    "actions": [
+      "QUARANTINED:16548",
+      "KILLED:16548:dead"
+    ],
+    "snapshots": [
+      {
+        "timestamp": "2026-04-29T14:15:07.820911",
+        "pid": 16548,
+        "name": "python.exe",
+        "exe": "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "cmdline": [
+          "C:\\Users\\Nouar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+          "test_attaque.py"
+        ],
+        "ppid": 14788,
+        "parent_name": "powershell.exe",
+        "username": "DESKTOP-9VU4QNA\\Nouar",
+        "create_time": "2026-04-29T14:13:11.606421",
+        "open_files": [
+          "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+          "C:\\Windows\\System32\\fr-FR\\kernel32.dll.mui",
+          "C:\\Windows\\System32\\fr-FR\\KernelBase.dll.mui"
+        ],
+        "connections": [],
+        "children": []
+      }
+    ],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.2661,
+      "threat_level": 3,
+      "rf_proba": 0.7537,
+      "if_score": -0.5322,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=75%)",
+      "triggered_by": [
+        "RF_proba=0.75>0.7",
+        "IF_score=-0.53<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.05,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 14.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-29T14:15:08.843332",
+    "trigger_file": "C:\\Users\\Nouar\\Desktop\\passwords_backup.txt",
+    "processes_found": 0,
+    "processes_killed": 0,
+    "actions": [
+      "NO_PROCESS_FOUND"
+    ],
+    "snapshots": [],
+    "alert_data": {
+      "label": "RANSOMWARE",
+      "confidence": 1.2661,
+      "threat_level": 3,
+      "rf_proba": 0.7485,
+      "if_score": -0.5322,
+      "explanation": "Signaux suspects : entropie critique (8.00 bits) \u2022 variation brutale \u0394+2.75 bits (RF=75%)",
+      "triggered_by": [
+        "RF_proba=0.75>0.7",
+        "IF_score=-0.53<-0.5"
+      ],
+      "features": {
+        "entropy_value": 7.9998,
+        "entropy_delta": 2.7493999999999996,
+        "modification_rate": 0.0167,
+        "extension_changed": 0.0,
+        "size_ratio": 1.0,
+        "time_of_day": 14.0,
+        "process_reputation": 0.5,
+        "files_renamed_count": 0.0,
+        "shadow_copy_access": 0.0
+      }
+    }
+  }
+]

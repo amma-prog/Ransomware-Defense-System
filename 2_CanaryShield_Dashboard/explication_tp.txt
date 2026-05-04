@@ -1,0 +1,31 @@
+=========================================================
+GUIDE D'EXPLICATION : RANSOMWARE SHIELD & MACHINE LEARNING
+=========================================================
+
+Si on vous pose ces questions pendant l'évaluation du TP, voici les réponses parfaites :
+
+1. "Pourquoi utiliser l'Entropie au lieu du Machine Learning dans cette interface web ?"
+   RÉPONSE : 
+   "C'est un choix d'Architecture (Microservices) pour optimiser les performances. 
+   - L'algorithme d'entropie est ultra-léger et instantané (0.001s).
+   - Un modèle ML (Random/Isolation Forest) avec Scikit-learn consomme beaucoup de RAM et de CPU en arrière-plan.
+   - J'ai fait le ML (Phase 1) pour prouver et extraire la meilleure feature (L'entropie a gagné à 70%). 
+   - Ensuite, j'ai développé l'interface (Phase 2) en me basant sur cette feature pour la production."
+
+2. "Mais l'entropie seule donne des Faux Positifs ! Que se passe-t-il si j'utilise WinRAR (.zip) ?"
+   RÉPONSE : 
+   "C'est exactement pour ça que l'interface utilise des Fichiers CANARIS (Leurres) !
+   - Si on surveillait les vrais fichiers de l'utilisateur, oui, on aurait besoin du ML pour distinguer WinRAR d'un Ransomware.
+   - MAIS les Canaris sont des fichiers CACHÉS. Un utilisateur normal ne va jamais zipper un fichier caché qu'il ne connaît pas. 
+   - Donc, TOUTE modification sur un Canari est obligatoirement un script automatisé (Ransomware). L'entropie est donc 100% fiable ici, zéro Faux Positif."
+
+3. "Pourquoi ne pas avoir intégré le fichier .pkl directement dans ce projet ?"
+   RÉPONSE : 
+   "Dans le monde professionnel de la cybersécurité, on sépare le Backend IA du Monitoring Temps-Réel.
+   L'objectif futur de ce projet est de déployer le modèle ML sous forme d'API (ex: FastAPI). 
+   Le Dashboard n'aura qu'à faire une requête HTTP vers cette API pour obtenir les prédictions des 9 features. Mettre le ML directement dans le code du Dashboard alourdirait l'interface."
+
+4. "Comment marche votre Machine Learning (Random Forest & Isolation Forest) ?"
+   RÉPONSE :
+   - Random Forest (Supervisé) : Détecte les ransomwares connus grâce à un vote de 200 arbres sur 9 features (Entropie, Delta, VSS, etc.).
+   - Isolation Forest (Non-Supervisé) : Connaît uniquement le comportement "Normal". Si un comportement est trop isolé/bizarre, il le bloque. C'est parfait pour contrer les virus inconnus (Zero-Day attacks).
